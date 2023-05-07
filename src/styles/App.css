@@ -28,10 +28,12 @@ input::placeholder, textarea::placeholder {
 #root {
     display: flex;
     justify-content: center;
+    min-height: 100vh;
 }
 .App  {
-    max-width: 800px;
+    max-width: 830px;
     width: 100%;
+    padding: 15px;
     margin: 0 auto;
 }
 
@@ -42,4 +44,22 @@ input::placeholder, textarea::placeholder {
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
+}
+
+.post-enter {
+    opacity: 0;
+    transform: translateX(-350px);
+}
+.post-enter-active {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    opacity: 0;
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
 }
