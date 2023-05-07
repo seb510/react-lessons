@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+input, button, a {
+    display: flex;
+    align-items: center;
+    transition: all .2s ease;
+}
+
+
+input, input::placeholder, textarea, textarea::placeholder {
+    font-family: inherit;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #232323;
+}
 #root {
     display: flex;
     justify-content: center;
